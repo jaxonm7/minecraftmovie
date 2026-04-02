@@ -39,9 +39,16 @@
             <button class="server-btn" onclick="changeServer('https://player.videasy.net/movie/950387')">Server 3 (Videasy)</button>
         </div>
 
-        <div class="player-container">
-            <iframe id="videoPlayer" src="https://vidsrc.me/embed/movie/tt12580682" allowfullscreen></iframe>
-        </div>
+       <div class="player-container">
+    <iframe 
+        id="videoPlayer" 
+        src="https://vidsrc.me/embed/movie/tt12580682" 
+        allowfullscreen 
+        referrerpolicy="origin"
+        /* The sandbox below is the key to blocking the ads */
+        sandbox="allow-forms allow-scripts allow-same-origin allow-presentation">
+    </iframe>
+</div>
 
         <div class="info-card">
             <h1>A Minecraft Movie <span class="badge">HD</span></h1>
